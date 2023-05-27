@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
+    "beautiful": "prettier --single-quote --trailing-comma all --write --tab-width 4 src/**/*.{js,json,scss}",
     "start": "nodemon src/index.js",
     "watch": "node-sass --watch src/resources/scss --output src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -25,6 +26,9 @@
     "nodemon": "^2.0.22"
   },
   "devDependencies": {
-    "node-sass": "^9.0.0"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "node-sass": "^9.0.0",
+    "prettier": "^2.8.8"
   }
 }

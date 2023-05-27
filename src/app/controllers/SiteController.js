@@ -1,15 +1,13 @@
-class SiteController{
-
+class SiteController {
     //[get] /news
     home(req, res) {
-        res.render("home")
+        res.render('home');
     }
 
-    search(req, res){
-        res.send("search")
+    search(req, res) {
+        res.send('search');
     }
-
 }
 
-const newsController = new SiteController
-export default newsController
+const newsController = new SiteController();
+export default newsController;
