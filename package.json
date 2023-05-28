@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "beautiful": "prettier --single-quote --trailing-comma all --write --tab-width 4 src/**/*.{js,json,scss}",
-    "start": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "watch": "node-sass --watch src/resources/scss --output src/public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
