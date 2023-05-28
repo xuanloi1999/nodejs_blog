@@ -1,0 +1,10 @@
+GET http://localhost:3000/courses/javascript
+###
+POST http://localhost:3000/courses/create
+
+{
+    name: "abc",
+    description: "abc",
+    thumbnail: "abc",
+
+}
