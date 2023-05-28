@@ -1,7 +1,15 @@
+import courseModel from '../models/Course.js';
+import mongooseToObject from '../../util/mongoose.js';
+
 class SiteController {
     //[get] /news
-    home(req, res) {
-        res.render('home');
+    async home(req, res) {
+        const courses = await courseModel
+            .find({})
+            .then((courses) => {
+                res.json(courses)
+            })
+            .catch(() => res.json({ error: 'Message' }));
     }
 
     search(req, res) {
